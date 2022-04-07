@@ -48,17 +48,7 @@ public class TestaTudo {
 			System.out.println(tipobebida);
 		}
 		
-		
-		
-		
-		
-		
-	
-	
-	
-	
-	
-		
+		input.close();
 		
 	}
 
