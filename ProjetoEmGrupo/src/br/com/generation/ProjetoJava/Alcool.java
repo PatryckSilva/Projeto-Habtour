@@ -7,8 +7,8 @@ public class Alcool {
 	int bebe;
 	double horas;
 	
-	Alcool(int  b){
-		bebe = b;
+	Alcool(int bebe ){
+		this.bebe = bebe;
 		
 	}
 	
@@ -21,7 +21,7 @@ public class Alcool {
 				System.out.println("voce bebe destilado");
 			}
 			else if(tipobebida == 2) {
-				System.out.println("Voce bebe destilado");
+				System.out.println("Voce bebe vinho");
 				}
 			else if(tipobebida == 3) {
 				System.out.println("Voce bebe cerveja");

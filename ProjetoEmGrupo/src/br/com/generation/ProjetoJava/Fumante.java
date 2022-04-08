@@ -4,13 +4,11 @@ public class Fumante {
 
 	private int fumoint;
 	private String fumador;
-	
-	
 	//metodos construtores recebendo os parametros
-	Fumante(int f,String fuma){
-		fumoint  = f;
-		fumador = fuma;
-		System.out.println(fumoint);
+	Fumante(int fumoint,String fumador){
+		this.fumoint  = fumoint;
+		this.fumador = fumador;
+		System.out.println(this.fumoint);
 	}
 	//metodos contendo os prints para os usuarios
 	
@@ -23,16 +21,13 @@ public class Fumante {
 			System.out.println("Você digitou uma opção inválida");
 			}
 	}
-	
 	void mal() {
 		System.out.println("maleficios do cigarro");
 	}
-	
 	void parabens() {
 		System.out.println("Parabenização");
 	}
 	//getter and setters
-
 	public int getFumoint() {
 		return fumoint;
 	}

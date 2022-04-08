@@ -9,28 +9,28 @@ public class TestaTudo {
 		
 		//fazendo Scanner para preencher os atributos da classe usuario
 		System.out.println("Olá,digite seu nome: ");
-		String n = input.nextLine();
+		String nome = input.nextLine();
 		System.out.println("agora digite sua idade: ");
-		int i = input.nextInt();
+		int idade = input.nextInt();
 		
 		//criando objeto com os parametros do método construtor Usuario()
-		Usuario u1 = new Usuario(n, i);
+		Usuario u1 = new Usuario(nome, idade);
 		//fazendo a primeira verificacao de se é fumante ou nao 
 		System.out.println("Vamos para a primeira pegunta: "+u1.getNome() + ", você fuma?(Digite 1 para sim, e digite 2 para não.) ");
-		int f = input.nextInt();
+		int fumoint = input.nextInt();
 		String fuma ="É fumante";
 		//criando objeto para classe Fumante
-		Fumante f1 = new Fumante(f,fuma);
+		Fumante f1 = new Fumante(fumoint,fuma);
 		
 		//Chamando metodo de verificacao se o usuario fuma
 		f1.verificafuma();
 		
 		//recebendo se a pessoa fuma ou nao
 		System.out.println("Agora a segunda pergunta " + u1.getNome()+", voce bebe? (Digite 1 para sim, e digite 2 para não.)");
-		int b = input.nextInt();
+		int bebe = input.nextInt();
 		
 		// criando objeto para classe Alcool
-			Alcool a1 = new Alcool(b);
+			Alcool a1 = new Alcool(bebe);
 			
 		//chamando metodo de verificacao se bebe
 		a1.verificabebe();
