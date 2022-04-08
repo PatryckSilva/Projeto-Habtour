@@ -18,24 +18,24 @@ public class TestaTudo {
 		//fazendo a primeira verificacao de se é fumante ou nao 
 		System.out.println("Vamos para a primeira pegunta: "+u1.getNome() + ", você fuma?(Digite 1 para sim, e digite 2 para não.) ");
 		int fumoint = input.nextInt();
-		String fuma ="É fumante";
+		
 		//criando objeto para classe Fumante
-		Fumante f1 = new Fumante(fumoint,fuma);
+		Pesquisa f1 = new Pesquisa();
 		
 		//Chamando metodo de verificacao se o usuario fuma
-		f1.verificafuma();
+		f1.verificafuma(fumoint);
 		
 		//recebendo se a pessoa fuma ou nao
 		System.out.println("Agora a segunda pergunta " + u1.getNome()+", voce bebe? (Digite 1 para sim, e digite 2 para não.)");
 		int bebe = input.nextInt();
 		
 		// criando objeto para classe Alcool
-			Alcool a1 = new Alcool(bebe);
+			Pesquisa a1 = new Pesquisa();
 			
 		//chamando metodo de verificacao se bebe
-		a1.verificabebe();
+		a1.verificabebe(bebe);
 		
-	
+	input.close();
 		
 	}
 
