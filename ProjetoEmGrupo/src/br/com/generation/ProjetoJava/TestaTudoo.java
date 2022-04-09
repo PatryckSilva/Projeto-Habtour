@@ -8,16 +8,7 @@ public class TestaTudoo {
 		Scanner input = new Scanner(System.in);
 		
 		
-		System.out.println("=============================================================");
-		System.out.println("====                                                      ===");
-		System.out.println("====                                                      ===");
-		System.out.println("====         		SEJA BEM VINDE!!!                 	  ===");
-		System.out.println("====         		   <Habtour/>                     	  ===");
-		System.out.println("====                                                      ===");
-		System.out.println("====                                                      ===");
-		System.out.println("=============================================================");
-		
-		System.out.println();
+		boasvindas();
 		
 		System.out.println("Digite o nome: ");
 		String n = input.nextLine();
@@ -42,27 +33,70 @@ public class TestaTudoo {
 		//indo para a segunda pergunta
 			System.out.println("Vamos para a segunda pergunta...");
 			
-		//criando objeto para bebe
+		//perguntando se bebe
+			System.out.println("Você costuma beber bebidas alcoolicas? Digite '1' para sim e '2' para não: ");
+			int bebe = input.nextInt();
+			//criando objeto para bebe
 			Pesquisaa b1 = new Pesquisaa();
-		//puxando metodo verificabebe()
-			b1.verificabebe();
-		
+			 if (bebe == 1) {
+				 System.out.println("Quantas latas de cerveja por semana? ");
+				 int latas = input.nextInt();
+					System.out.println("Quantos MLs de destilado? ");
+					int mlsdes = input.nextInt();
+					System.out.println("Quantas taças de vinho? ");
+					int taca = input.nextInt();
+					//puxando metodo verificabebe()
+					b1.verificabebe(latas, mlsdes, taca);
+			 }
 		//indo para a terceira pegunta
 		System.out.println("Vamos para a terceira pergunta...");
 			
+		System.out.println("Quantas horas por dia voce fica nas redes sociais? ");
+		int horasr = input.nextInt();
+		System.out.println("É por trabalho ou lazer? 1- lazer/2-trabalho");
+		int redetrab = input.nextInt();
 		//criando objeto para rede social
 		Pesquisaa r1 = new Pesquisaa();
-		
 		//puxando metodo verificarede()
-		r1.verificaedes();
-	
+		r1.verificaedes(horasr,redetrab);
 		
+		//indo para a quarta pergunta
+		System.out.println("Vamos para a quarta pergunta...");
+		
+		System.out.println("Quantas horas por dia vc passa jogando jogos eletronicos: ");
+		int horasj = input.nextInt();
+		System.out.println("É por trabalho ou lazer? 1- lazer/2-trabalho");
+		int jogostrab = input.nextInt();
+		//criando objeto para jogos
+		Pesquisaa j1 = new Pesquisaa();
+		//puxando metodo verificajogos()
+		j1.verificarjogos(horasj, jogostrab);
 		
 		//printando as respostas para o usuario
+		f1.respostafumo();
+		b1.respostabebe();
+		r1.respostabebe();
+		j1.respostajogos();
 		
 input.close();
 }
+	
+	static void boasvindas() {
+		System.out.println("=============================================================");
+		System.out.println("====                                                      ===");
+		System.out.println("====                                                      ===");
+		System.out.println("====         		SEJA BEM VINDE!!!             	  ===");
+		System.out.println("====         		   <Habtour/>                  	  ===");
+		System.out.println("====                                                      ===");
+		System.out.println("====                                                      ===");
+		System.out.println("=============================================================");
+		
+		System.out.println();
+	}
 		
 	}
+
+
+
 
 

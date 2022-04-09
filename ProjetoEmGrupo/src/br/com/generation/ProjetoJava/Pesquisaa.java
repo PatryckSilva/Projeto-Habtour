@@ -1,7 +1,5 @@
 package br.com.generation.ProjetoJava;
 
-import java.util.Scanner;
-
 public class Pesquisaa {
 	
 	//verifica fumar
@@ -22,79 +20,43 @@ public class Pesquisaa {
 			private int latas;
 			private int mlsdes;
 			private int taca;
-			void verificabebe() {
-				
-					Scanner input = new Scanner(System.in);
-					System.out.println("Você costuma beber bebidas alcoolicas? Digite '1' para sim e '2' para não: ");
-					int bebe = input.nextInt();
-							 if (bebe == 1) {
-
+			void verificabebe(int _latas, int _mlsdes,int _taca) {	
 					//recebendo se a pessoa bebe ou nao
-					System.out.println();//criando objeto para classe Alcool
-					System.out.println("Quantas latas de cerveja por semana? ");
-					int latas1 = input.nextInt();
-					this.latas = latas1;
-					System.out.println();
-					
-					System.out.println("Quantos MLs de destilado? ");
-					int mlsdes1 = input.nextInt();
-					this.mlsdes = mlsdes1;
-					System.out.println();
-					
-					System.out.println("Quantas taças de vinho? ");
-					int taca1 = input.nextInt();
-					this.taca = taca1;
-					System.out.println();
-					
-					
-					}else {
-						
-					}
-						input.close();
-			
+					this.latas = _latas;
+					this.mlsdes = _mlsdes;
+					this.taca = _taca;		
 			}
 			//resposta para quem bebe
 					void respostabebe() {
 						if(latas > 1) {
 							latas = latas - 1;
-							System.out.println("Voce esta bebendo "+ latas + " a mais de cerveja, o ideal é tanto...");
-						}else if(latas < 1 && latas >0) {
+							System.out.println("Voce esta bebendo "+ latas + " latas a mais de cerveja, o ideal é tanto...");
+						}else if(latas <= 1 && latas >0) {
 							System.out.println("voce esta na media do ideal para beber cerveja, mas nao se deixe levar");
-						}else {
-						System.out.println("que bom que voce nao bebe cerveja, continue assim");
 						}
 						if(mlsdes > 30){
 							mlsdes = mlsdes - 30;
-							System.out.println("Voce esta bebendo " + mlsdes+ " a mais de destilado, o ideal é tanto...");
-						}else if(mlsdes <30 && mlsdes > 0){
+							System.out.println("Voce esta bebendo " + mlsdes+ " MLs a mais de destilado, o ideal é tanto...");
+						}else if(mlsdes <=30 && mlsdes > 0){
 							System.out.println("voce esta na media do ideal para beber destilado, mas nao se deixe levar");
-						}else {
-							System.out.println("que bom que voce nao bebe destilado, continue assim");
 						}
 						if(taca > 1) {
 							taca = taca-1;
-							System.out.println("Voce esta bebendo "+ taca + " a mais de vinho,o ideal é tanto...");
-						}else if(taca <1 && taca >0) {
+							System.out.println("Voce esta bebendo "+ taca + " Taças a mais de vinho,o ideal é tanto...");
+						}else if(taca <=1 && taca >0) {
 							System.out.println("voce esta na media do ideal para beber vinho, mas nao se deixe levar");
-						}else {
-							System.out.println("que bom que voce nao bebe vinho, continue assim");
 						}
 					}
 			
 					private int horasr;
 					private int redetrab;
 			//verfica redes
-					void verificaedes() {
-						Scanner input = new Scanner(System.in);
-						System.out.println("Quantas horas por dia voce fica nas redes sociais? ");
-						this.horasr = input.nextInt();
-						System.out.println("É por trabalho ou lazer?(1- lazer/ 2- trabalho)");
-						this.redetrab = input.nextInt();
-						input.close();
+					void verificaedes(int _horasr,int _redetrab) {
+						this.horasr = _horasr;
+						
+						this.redetrab = _redetrab;
 					}
-
 			//resposta redes
-			
 					void respostaredes() {
 						if(redetrab == 1) {
 							if(horasr == 0 ) {
@@ -115,13 +77,9 @@ public class Pesquisaa {
 			//verifica jogos
 			private int horasj;
 			private int jogostrab;
-				void verificarjogos() {
-					Scanner input = new Scanner(System.in);
-					System.out.println("Quantas horas por dia vc passa jogando jogos eletronicos: ");
-					this.horasj = input.nextInt();
-					System.out.println("É por trabalho ou lazer? 1- lazer/2-trabalho");
-					this.jogostrab = input.nextInt();
-					input.close();
+				void verificarjogos(int _horasj, int _jogostrab) {
+					this.horasj=_horasj;
+					this.jogostrab=_jogostrab;
 				}
 				
 				//resposta jogos
@@ -138,18 +96,12 @@ public class Pesquisaa {
 					}
 				}
 			
-			
-			
-			
-			
-
-			
 			//mal fumo
 			void malfumo() {
 				System.out.println("maleficios do cigarro");
 			}
 			void parabensfumo() {
-				System.out.println("Parabenização");
+				System.out.println("Parabenização de acordo com o cigarro");
 			}
 
 			//mal bebe
