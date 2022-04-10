@@ -32,6 +32,7 @@ public class Pesquisaa {
 			}
 			//resposta para quem bebe
 					void respostabebe() {
+						
 						if(latas > 1) {
 							latas = latas - 1;
 							System.out.println("Voce esta bebendo "+ latas + " latas a mais de cerveja, o ideal é tanto...");
@@ -63,13 +64,17 @@ public class Pesquisaa {
 					void respostaredes() {
 						if(redetrab == 1) {
 							if(horasr == 0 ) {
+								System.out.println("Feedback Sobre as redes sociais");
 								System.out.println("Pelo visto voce n usa redes sociais, os riscos a sua saude portanto nao ha riscos a sua saude em relacao a isso (Redes sociais)");
 							}else if(horasr > 1 && horasr < 3) {
+								System.out.println("Feedback Sobre as redes sociais");
 								System.out.println("Voce esta no tempo ideal de uso, vc nao sera tao prejudicado...");
 							}else if(horasr > 3 && horasr <7) {
+								System.out.println("Feedback Sobre as redes sociais");
 								System.out.println("Voce esta em estado de alerta, tome cuidado, pela quantidade de horas vc pode ser mt prejudicado(redes sociais");
 							}else if(horasr>7) {
 								int exchorasr = horasr -7;
+								System.out.println("Feedback Sobre as redes sociais");
 								System.out.println("Tome muito cuidado, voce esta se prejudicando muito e deve seguir as recomendacoes do programa e vc esta " +exchorasr+ " hora acima do ideal (Redes sociais)");
 							}
 						}else if(redetrab ==2) {
@@ -77,6 +82,7 @@ public class Pesquisaa {
 								System.out.println("Sabemos que voce esta trabalhando, mas vc esta estado de alerta, tome cuidado, pela quantidade de horas vc pode ser mt prejudicado(redes sociais");
 							}else if(horasr>7) {
 								int exchorasr = horasr -7;
+								System.out.println("Feedback Sobre as redes sociais");
 								System.out.println("Tome muito cuidado,sabemos que é por causa do trabalho mas voce esta se prejudicando muito e deve seguir as recomendacoes do programa e vc esta " +exchorasr+ " hora acima do ideal (Redes sociais)");
 							}
 						}else {
@@ -96,20 +102,26 @@ public class Pesquisaa {
 				void respostajogos() {
 					if(jogostrab == 1) {
 						if(horasj == 0) {
+							System.out.println("Feedback Sobre jogos");
 							System.out.println("parece q vc nao joga, portanto nao tera nenhum risco a saude em relacao a isso");
 						}else if(horasj >2 ) {
 							int exchorasj = horasj-2;
+							System.out.println("Feedback Sobre jogos");
 							System.out.println("cuidado, o ideal é 2 horas por dia e vc esta: " + exchorasj+ " a mais");
 						}else {
+							System.out.println("Feedback Sobre jogos");
 							System.out.println("parece que o tempo que vc joga esta na media ideal, continue assim");
 						}
 					}else if(jogostrab ==2) {
 						if(horasj == 0) {
+							System.out.println("Feedback Sobre jogos");
 							System.out.println("parece q vc nao joga, portanto nao tera nenhum risco a saude em relacao a isso");
 						}else if(horasj >2 ) {
 							int exchorasj = horasj-2;
+							System.out.println("Feedback Sobre jogos");
 							System.out.println("Sabemos que voce trabalha com isso, mas cuidado, o ideal é 2 horas por dia e vc esta: " + exchorasj+ " a mais");
 						}else {
+							System.out.println("Feedback Sobre jogos");
 							System.out.println("parece que o tempo que vc joga esta na media ideal mesmo trabalhando com isso, continue assim");
 						}
 					}else {
@@ -119,12 +131,15 @@ public class Pesquisaa {
 			
 			//mal fumo
 			void malfumo() {
-				System.out.println("maleficios do cigarro");
+				System.out.println("Feedback sobre Cigarro");
+				System.out.println("É bom repensar aquele cigarro diário se você quer melhorar o seu sistema imunológico. Segundo o INCA, o tabagismo surge como um dos inimigos das defesas do corpo e propicia aos fumantes uma chance bem maior de adoecer quando comparados aos não-fumantes. Não importa sua idade, parar de fumar sempre vale a pena. Parar aumenta a expectativa e a qualidade de vida.\r\n"
+						+ "Os benefícios podem ser percebidos em qualquer faixa etária, mas quanto mais cedo o fumante parar, mais saúde ele terá, como reforça o Ministério da Saúde.");
 				this.gastofumo = this.gastofumo *365;
 				System.out.println("Essa é a quantia por ano gasta em cigarros: " + this.gastofumo);
 			}
 			void parabensfumo() {
-				System.out.println("Parabenização de acordo com o cigarro");
+				System.out.println("Feedback sobre cigarro");
+				System.out.println("Continue assim, você evitará inúmeros riscos a sua saúde e é importante lembrar que o tabaco causa não apenas câncer, mas uma série de outras doenças crônicas que também podem levar à morte, como doenças cardiovasculares, respiratórias, enfisemas, bronquite crônica.");
 			}
 
 			//mal bebe

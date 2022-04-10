@@ -48,6 +48,7 @@ public class TestaTudoo {
 					//puxando metodo verificabebe()
 					b1.verificabebe(latas, mlsdes, taca);
 			 }else if(bebe == 2) {
+				 
 				 naobebe = "parabens, voce nao bebe";
 			 }
 		//indo para a terceira pegunta
@@ -74,8 +75,10 @@ public class TestaTudoo {
 		f1.respostafumo();
 		System.out.println();
 		if(bebe ==1) {
+			System.out.println("Feedaback sobre beber");
 			b1.respostabebe();
 		}else if(bebe==2) {
+			System.out.println("Feedaback sobre beber");
 			System.out.println(naobebe);
 		}else {
 			System.out.println("Voce digitou uma opcao invalida por isso nao fizemos nenhuma verificacao(beber)");
