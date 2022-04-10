@@ -67,11 +67,17 @@ public class TestaTudoo {
 		j1.verificarjogos(horasj, jogostrab);
 		//printando as respostas para o usuario
 		f1.respostafumo();
-		if(bebe ==2) {
+		System.out.println();
+		if(bebe ==1) {
+			b1.respostabebe();
+		}else if(bebe==2) {
 			System.out.println(naobebe);
+		}else {
+			System.out.println("Voce digitou uma opcao invalida por isso nao fizemos nenhuma verificacao(beber)");
 		}
-		b1.respostabebe();
+		System.out.println();
 		r1.respostaredes();
+		System.out.println();
 		j1.respostajogos();
 		
 input.close();
