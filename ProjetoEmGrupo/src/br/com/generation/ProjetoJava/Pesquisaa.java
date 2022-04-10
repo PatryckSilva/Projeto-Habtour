@@ -53,24 +53,28 @@ public class Pesquisaa {
 			//verfica redes
 					void verificaedes(int _horasr,int _redetrab) {
 						this.horasr = _horasr;
-						
 						this.redetrab = _redetrab;
 					}
 			//resposta redes
 					void respostaredes() {
 						if(redetrab == 1) {
 							if(horasr == 0 ) {
-								System.out.println("Pelo visto voce n usa redes sociais, os riscos a sua sauda sao bem altos");
+								System.out.println("Pelo visto voce n usa redes sociais, os riscos a sua saude portanto nao ha riscos a sua saude em relacao a isso (Redes sociais)");
 							}else if(horasr > 1 && horasr < 3) {
 								System.out.println("Voce esta no tempo ideal de uso, vc nao sera tao prejudicado...");
 							}else if(horasr > 3 && horasr <7) {
-								System.out.println("Voce esta em estado de alerta, tome cuidado, pela quantidade de horas vc pode ser mt prejudicado");
+								System.out.println("Voce esta em estado de alerta, tome cuidado, pela quantidade de horas vc pode ser mt prejudicado(redes sociais");
 							}else if(horasr>7) {
 								int exchorasr = horasr -7;
-								System.out.println("Tome muito cuidado, voce esta se prejudicando muito e deve seguir as recomendacoes do programa e vc esta " +exchorasr+ " hora acima do ideal");
+								System.out.println("Tome muito cuidado, voce esta se prejudicando muito e deve seguir as recomendacoes do programa e vc esta " +exchorasr+ " hora acima do ideal (Redes sociais)");
 							}
 						}else if(redetrab ==2) {
-							System.out.println("Sabendo que vc usa todo esse tempo por conta do trabalho sabemos que nao tem muito o q fazer, mas tente evitar ao maximo ficar todo esse tempo nas redes sociais e tente seguir nossas recomendacoes");
+							if(horasr > 3 && horasr <7) {
+								System.out.println("Sabemos que voce esta trabalhando, mas vc esta estado de alerta, tome cuidado, pela quantidade de horas vc pode ser mt prejudicado(redes sociais");
+							}else if(horasr>7) {
+								int exchorasr = horasr -7;
+								System.out.println("Tome muito cuidado,sabemos que é por causa do trabalho mas voce esta se prejudicando muito e deve seguir as recomendacoes do programa e vc esta " +exchorasr+ " hora acima do ideal (Redes sociais)");
+							}
 						}
 					}
 			
@@ -89,9 +93,16 @@ public class Pesquisaa {
 							System.out.println("parece q vc nao joga, portanto nao tera nenhum risco a saude em relacao a isso");
 						}else if(horasj >2 ) {
 							int exchorasj = horasj-2;
-							System.out.println("cuidado, o ideal é 2 horas por dia e vc esta: " + exchorasj);
+							System.out.println("cuidado, o ideal é 2 horas por dia e vc esta: " + exchorasj+ " a mais");
 						}else {
 							System.out.println("parece que o tempo que vc joga esta na media ideal, continue assim");
+						}
+					}else if(jogostrab ==2) {
+						 if(horasj >2 ) {
+							int exchorasj = horasj-2;
+							System.out.println("Sabemos que voce trabalha com isso, mas cuidado, o ideal é 2 horas por dia e vc esta: " + exchorasj+ " a mais");
+						}else {
+							System.out.println("parece que o tempo que vc joga esta na media ideal mesmo trabalhando com isso, continue assim");
 						}
 					}
 				}
