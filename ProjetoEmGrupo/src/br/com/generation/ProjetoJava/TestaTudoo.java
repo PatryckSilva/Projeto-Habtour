@@ -22,9 +22,14 @@ public class TestaTudoo {
 		//perguntando se fuma
 		System.out.println(u1.getNome() + ", você fuma?(Digite 1 para sim, e digite 2 para não.) ");
 		int fumoint = input.nextInt();
+		double gastofumo = 0.0;
+		if(fumoint == 1) {
+			System.out.println(u1.getNome() + ", quanto por dia vc gasta com cigarros?");
+			gastofumo = input.nextDouble();
+		}
 		//criando objeto para classe Fumante
 		Pesquisaa f1 = new Pesquisaa();
-			f1.verificafuma(fumoint);
+			f1.verificafuma(fumoint,gastofumo);
 		//indo para a segunda pergunta
 			System.out.println("Vamos para a segunda pergunta...");
 		//perguntando se bebe

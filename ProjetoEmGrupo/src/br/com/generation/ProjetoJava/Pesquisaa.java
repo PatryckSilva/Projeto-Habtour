@@ -4,8 +4,10 @@ public class Pesquisaa {
 	
 	//verifica fumar
 			private int fumoint;
-			void verificafuma(int resposta1) {
-				this.fumoint = resposta1;
+			private double gastofumo;
+			void verificafuma(int _fumoint, double _gastofumo) {
+				this.fumoint = _fumoint;
+				this.gastofumo = _gastofumo;
 				}
 			//resposta para quem fuma
 					void respostafumo() {
@@ -118,6 +120,8 @@ public class Pesquisaa {
 			//mal fumo
 			void malfumo() {
 				System.out.println("maleficios do cigarro");
+				this.gastofumo = this.gastofumo *365;
+				System.out.println("Essa é a quantia por ano gasta em cigarros: " + this.gastofumo);
 			}
 			void parabensfumo() {
 				System.out.println("Parabenização de acordo com o cigarro");
