@@ -159,7 +159,7 @@ public class Pesquisaa {
 			void maljogos() {
 				System.out.println("Feedback Sobre jogos");
 				System.out.println("Alerta! Você está dentro do que é considerado além do seguro. Verifique se esse hábito não está prejudicando suas relações interpessoais (Deixando de interagir com família e amigos)."
-						+ " O excesso também pode fazer com que deixe de realizar outras atividades e prejudique o seu sono." + "O ideal é 2 horas por dia ou menos e você está " + exchorasj+" acima do ideal.");
+						+ " O excesso também pode fazer com que deixe de realizar outras atividades e prejudique o seu sono." + "O ideal é 2 horas por dia ou menos e você está " + exchorasj+" horas acima do ideal.");
 			}
 			void idealjogos() {
 				System.out.println("Feedback Sobre jogos");
@@ -168,7 +168,7 @@ public class Pesquisaa {
 			void maljogostrabalha() {
 				System.out.println("Feedback Sobre jogos");
 				System.out.println("Sabemos que você trabalho com isso,mas alerta! Você está dentro do que é considerado além do seguro. Verifique se esse hábito não está prejudicando suas relações interpessoais (Deixando de interagir com família e amigos)."
-						+ " O excesso também pode fazer com que deixe de realizar outras atividades e prejudique o seu sono." + "O ideal é 2 horas por dia ou menos e você está " + exchorasj+" acima do ideal.");
+						+ " O excesso também pode fazer com que deixe de realizar outras atividades e prejudique o seu sono." + "O ideal é 2 horas por dia ou menos e você está " + exchorasj+" horas acima do ideal.");
 			}
 			void idealjogostrabalha() {
 				System.out.println("Feedback Sobre jogos");

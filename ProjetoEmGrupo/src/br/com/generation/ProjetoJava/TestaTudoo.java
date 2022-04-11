@@ -50,7 +50,7 @@ public class TestaTudoo {
 					//puxando metodo verificabebe()
 					b1.verificabebe(latas, mlsdes, taca);
 			 }else if(bebe == 2) {
-				 naobebe = "Desse jeito evitamos o desenvolvimento de doenças crônicas, incluindo hipertensão arterial, doença cardíaca, acidente vascular cerebral, doença hepática e problemas digestivos e problemas de saúde mental causados pelo álcool incluindo depressão e ansiedade";
+				 naobebe = "Desse jeito evitamos o desenvolvimento de doenças crônicas, incluindo hipertensão arterial, doença cardíaca, acidente vascular cerebral, doença hepática e problemas digestivos, e problemas de saúde/mental causados pelo álcool,incluindo depressão e ansiedade";
 			 }
 		//indo para a terceira pegunta
 		System.out.println("Vamos para a terceira pergunta...");
