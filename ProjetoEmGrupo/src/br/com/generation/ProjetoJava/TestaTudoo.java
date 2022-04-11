@@ -9,14 +9,16 @@ public class TestaTudoo {
 		
 		
 		boasvindas();
-		
+		//recebendo o nome
 		System.out.println("Digite o nome: ");
 		String n = input.nextLine();
-		System.out.println("Digite a idade: ");
-		int i = input.nextInt();
+		//verificando se o usuario nao esta digitando numeros 
+		if(!matchesOnlyText(n)) {
+			System.out.println("Você não pode inserir números no nome.");
+		}else {
 		
 		//criando objeto com os parametros do método construtor Usuario()
-		Usuario u1 = new Usuario(n, i);
+		Usuario u1 = new Usuario(n);
 		//indo para a primeira pergunta
 		System.out.println("Vamos para a primeira pegunta...");
 		//perguntando se fuma
@@ -88,8 +90,14 @@ public class TestaTudoo {
 		j1.respostajogos();
 		
 input.close();
+
 }
+	}
 	
+	public static boolean matchesOnlyText(String text) {
+	    return text.matches("[a-zA-Z\\s]+");
+	}
+
 	static void boasvindas() {
 		System.out.println("=============================================================");
 		System.out.println("====                                                      ===");

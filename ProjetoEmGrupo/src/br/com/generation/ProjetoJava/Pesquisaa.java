@@ -66,22 +66,20 @@ public class Pesquisaa {
 							if(horasr == 0 ) {
 								System.out.println("Feedback Sobre as redes sociais");
 								System.out.println("Pelo visto você nao usa redes sociais, portanto não há riscos a sua saúde em relação a isso (Redes sociais)");
-							}else if(horasr > 1 && horasr < 3) {
-								
+							}else if(horasr >=1 && horasr <=3) {
 								aceitavelrede();
-							}else if(horasr > 3 && horasr <7) {
-								
+							}else if(horasr >3 && horasr <=7) {
 								alertarede();
 							}else if(horasr>7) {
 								
 								malrede();
 							}
 						}else if(redetrab ==2) {
-							if(horasr > 1 && horasr < 3) {
+							if(horasr >= 1 && horasr <=3) {
 							
 								aceitavelredetrab();
 							}
-						else if(horasr > 3 && horasr <7) {
+						else if(horasr >=3 && horasr <=7) {
 							alertaredetrab();
 							}else if(horasr>7) {
 								malredetrab();
@@ -114,7 +112,7 @@ public class Pesquisaa {
 					}else if(jogostrab ==2) {
 						if(horasj == 0) {
 							System.out.println("Parece que você não joga, portanto não terá nenhum risco a saúde em relação a isso.");
-						}else if(horasj >2 ) {
+						}else if(horasj >=2 ) {
 							 exchorasj = horasj-2;
 							maljogostrabalha();
 						}else {
@@ -179,7 +177,6 @@ public class Pesquisaa {
 			//malredes
 			void aceitavelrede() {
 				System.out.println("Feedback Sobre as redes sociais");
-
 				System.out.println("Muito bem! você está dentro do aceitável.\r\n"
 						+ "Um estudo publicado pelo Journal of Social and Clinical Psychology, que concluiu que utilizar as redes sociais por até 30 minutos por dia pode trazer bons resultados à saúde mental, mas passar até 3h não afeta tanto.\r\n");
 			}
