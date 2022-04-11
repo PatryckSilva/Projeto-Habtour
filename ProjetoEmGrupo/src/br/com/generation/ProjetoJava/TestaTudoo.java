@@ -11,8 +11,8 @@ public class TestaTudoo {
 		System.out.println("Digite seu nome: ");
 		String n = input.nextLine();
 		//verificando se o usuario nao esta digitando numeros 
-		while(!matchesOnlyText(n)) {
-			System.out.println("Você não pode inserir números no nome.");
+		while(!matchesOnlyText(n)){
+			System.out.println("Você não pode inserir números ou caracteres especiais no nome.");
 			System.out.println("Digite seu nome: ");
 			n = input.nextLine();
 		}
@@ -76,8 +76,6 @@ public class TestaTudoo {
 		Pesquisaa j1 = new Pesquisaa();
 		//puxando metodo verificajogos()
 		j1.verificarjogos(horasj, jogostrab);
-		
-		
 		//printando as respostas para o usuario
 		f1.respostafumo();
 		System.out.println();
@@ -96,11 +94,10 @@ public class TestaTudoo {
 		j1.respostajogos();
 		
 		System.out.println();
-		System.out.println("Obrigado(a) por participar de nossas pesquisas "+u1.getNome()+ " espero que nosso programa ajude.");
+		System.out.println("Obrigado(a) por participar de nossas pesquisas "+u1.getNome()+ ", espero que nosso programa ajude.");
 input.close();
 
 }
-	
 	
 	public static boolean matchesOnlyText(String text) {
 	    return text.matches("[a-zA-Z\\s]+");

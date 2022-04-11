@@ -32,7 +32,6 @@ public class Pesquisaa {
 			}
 			//resposta para quem bebe
 					void respostabebe() {
-						
 						if(latas > 2) {
 						latas = latas - 2;
 							malbebecerveja();
