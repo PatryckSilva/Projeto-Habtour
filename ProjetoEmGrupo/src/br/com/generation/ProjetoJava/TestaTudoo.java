@@ -16,9 +16,10 @@ public class TestaTudoo {
 		if(!matchesOnlyText(n)) {
 			System.out.println("Você não pode inserir números no nome.");
 		}else {
-		
+			System.out.println("Qual sua idade?");
+			int i = input.nextInt();
 		//criando objeto com os parametros do método construtor Usuario()
-		Usuario u1 = new Usuario(n);
+		Usuario u1 = new Usuario(n,i);
 		//indo para a primeira pergunta
 		System.out.println("Vamos para a primeira pegunta...");
 		//perguntando se fuma
