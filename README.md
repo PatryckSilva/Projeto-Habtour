@@ -1,6 +1,5 @@
 # Projeto-Java-em-Grupo
-Projeto Java em grupo
-<p>Esse é nosso projeto em Java, no qual o programa foi pensado para ajudar o usuário a identificar hábitos que trazem malefícios para sua saúde, a partir disso alertar e apresentar alguns dados a respeito dessas práticas.</p>
+<p>Este é nosso projeto em Java, no qual o programa foi pensado para ajudar o usuário a identificar hábitos que trazem malefícios para sua saúde, a partir disso alertar e apresentar alguns dados a respeito dessas práticas.</p>
 <p><img src = "https://cdn.discordapp.com/attachments/954033698012033136/962847059801673798/unknown.png"></p>
 
 ##
@@ -8,7 +7,7 @@ Projeto Java em grupo
 <li><h3> As funcionalidades para o usuário são:</h3>
 <ul>
 <li>
-  <p>Verificar há algum excesso num dos seguintes desses hábitos que estamos abordando nesse programa(Bebidas alcóolicas, cigarros,redes sociais e vídeo-games).</p>
+  <p>Verificar se há algum excesso num dos seguintes desses hábitos que estamos abordando nesse programa(Bebidas alcóolicas, cigarros,redes sociais e vídeo-games).</p>
  </li> 
   <li>
   <p>Após verificar o perfil do usuário,o programa apresenta os riscos físicos e mentais que podem surgir atrelados aos possíveis vícios.
@@ -17,15 +16,15 @@ Projeto Java em grupo
 
 ##
 
-<li><h3>Esse é o fluxograma usado para a criação do programa</h3>
+<li><h3>Este é o fluxograma usado para a criação do programa</h3>
 <img src = "https://cdn.discordapp.com/attachments/954033698012033136/962875510478766101/unknown.png"></li>
 
 ##
 
-<li><h3>Essa é a nossa equipe para esse projeto</h3>
+<li><h3>Esta é a nossa equipe para esse projeto</h3>
 <img src = "https://cdn.discordapp.com/attachments/954033698012033136/962876193332420618/unknown.png"></li>
   
-  <li><h3>Esse é um pouco do nosso código</h3>
+  <li><h3>Este é um pouco do nosso código</h3>
    <img src="https://cdn.discordapp.com/attachments/954033698012033136/962877762895495228/unknown.png">
     <p></p>
    <img src="https://cdn.discordapp.com/attachments/954033698012033136/962877928360804402/unknown.png">
