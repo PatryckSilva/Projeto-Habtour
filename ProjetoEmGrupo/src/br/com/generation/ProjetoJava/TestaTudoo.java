@@ -13,9 +13,11 @@ public class TestaTudoo {
 		System.out.println("Digite seu nome: ");
 		String n = input.nextLine();
 		//verificando se o usuario nao esta digitando numeros 
-		if(!matchesOnlyText(n)) {
+		while(!matchesOnlyText(n)) {
 			System.out.println("Você não pode inserir números no nome.");
-		}else {
+			System.out.println("Digite seu nome: ");
+			n = input.nextLine();
+		}
 			System.out.println("Qual sua idade?");
 			int i = input.nextInt();
 		//criando objeto com os parametros do método construtor Usuario()
@@ -93,7 +95,7 @@ public class TestaTudoo {
 input.close();
 
 }
-	}
+	
 	
 	public static boolean matchesOnlyText(String text) {
 	    return text.matches("[a-zA-Z\\s]+");
