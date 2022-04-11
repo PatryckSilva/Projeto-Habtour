@@ -16,7 +16,7 @@ public class Pesquisaa {
 					}else if (fumoint == 2) {
 						parabensfumo();
 					}else {
-						System.out.println("Voce digitou uma opcao inválida por isso nao fizemos a verificacao(fumo)");
+						System.out.println("Você digitou uma opção inválida por isso não fizemos a verificação(fumo)");
 					}
 					}
 			
@@ -65,7 +65,7 @@ public class Pesquisaa {
 						if(redetrab == 1) {
 							if(horasr == 0 ) {
 								System.out.println("Feedback Sobre as redes sociais");
-								System.out.println("Pelo visto você nao usa redes sociais, portanto não há riscos a sua saúde em relação a isso (Redes sociais)");
+								System.out.println("Pelo visto você não usa redes sociais, portanto não há riscos a sua saúde em relação a isso (Redes sociais)");
 							}else if(horasr >=1 && horasr <=3) {
 								aceitavelrede();
 							}else if(horasr >3 && horasr <=7) {
@@ -75,17 +75,18 @@ public class Pesquisaa {
 								malrede();
 							}
 						}else if(redetrab ==2) {
-							if(horasr >= 1 && horasr <=3) {
-							
+							if(horasr == 0 ) {
+								System.out.println("Feedback Sobre as redes sociais");
+								System.out.println("Pelo visto você não usa redes sociais, portanto não há riscos a sua saúde em relação a isso (Redes sociais)");
+							}else if(horasr >= 1 && horasr <=3) {
 								aceitavelredetrab();
-							}
-						else if(horasr >=3 && horasr <=7) {
+							}else if(horasr >=3 && horasr <=7) {
 							alertaredetrab();
 							}else if(horasr>7) {
 								malredetrab();
 							}
 						}else {
-							System.out.println("parece q vc digitou uma opcao inválida, portanto nao fizemos a verificacao(redes)");
+							System.out.println("parece que você digitou uma opção inválida, portanto não fizemos a verificação(redes)");
 						}
 					}
 			
@@ -102,7 +103,7 @@ public class Pesquisaa {
 				void respostajogos() {
 					if(jogostrab == 1) {
 						if(horasj == 0) {
-							System.out.println("Parece q você não joga, portanto nao terá nenhum risco a saúde em relação a isso.");
+							System.out.println("Parece que você não joga, portanto nao terá nenhum risco a saúde em relação a isso.");
 						}else if(horasj >=2 ) {
 							 exchorasj = horasj-2;
 							 maljogos();
