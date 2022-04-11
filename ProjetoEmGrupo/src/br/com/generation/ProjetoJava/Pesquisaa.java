@@ -2,7 +2,7 @@ package br.com.generation.ProjetoJava;
 
 public class Pesquisaa {
 	
-	//verifica fumar
+	//verifica fumar é receber dados
 			private int fumoint;
 			private double gastofumo;
 			void verificafuma(int _fumoint, double _gastofumo) {
@@ -34,7 +34,7 @@ public class Pesquisaa {
 					void respostabebe() {
 						
 						if(latas > 2) {
-							latas = latas - 2;
+						latas = latas - 2;
 							malbebecerveja();
 						}else if(latas <= 2 && latas >0) {
 							idealbebecerveja();
@@ -52,11 +52,10 @@ public class Pesquisaa {
 							idealbebevinho();
 						}
 					}
-			
 					private int horasr;
 					private int redetrab;
 			//verfica redes
-					void verificaedes(int _horasr,int _redetrab) {
+					void verificaredes(int _horasr,int _redetrab) {
 						this.horasr = _horasr;
 						this.redetrab = _redetrab;
 					}
@@ -71,7 +70,6 @@ public class Pesquisaa {
 							}else if(horasr >3 && horasr <=7) {
 								alertarede();
 							}else if(horasr>7) {
-								
 								malrede();
 							}
 						}else if(redetrab ==2) {
@@ -81,7 +79,7 @@ public class Pesquisaa {
 							}else if(horasr >= 1 && horasr <=3) {
 								aceitavelredetrab();
 							}else if(horasr >=3 && horasr <=7) {
-							alertaredetrab();
+								alertaredetrab();
 							}else if(horasr>7) {
 								malredetrab();
 							}
@@ -104,7 +102,7 @@ public class Pesquisaa {
 					if(jogostrab == 1) {
 						if(horasj == 0) {
 							System.out.println("Parece que você não joga, portanto nao terá nenhum risco a saúde em relação a isso.");
-						}else if(horasj >=2 ) {
+						}else if(horasj >2 ) {
 							 exchorasj = horasj-2;
 							 maljogos();
 						}else {
@@ -113,7 +111,7 @@ public class Pesquisaa {
 					}else if(jogostrab ==2) {
 						if(horasj == 0) {
 							System.out.println("Parece que você não joga, portanto não terá nenhum risco a saúde em relação a isso.");
-						}else if(horasj >=2 ) {
+						}else if(horasj >2 ) {
 							 exchorasj = horasj-2;
 							maljogostrabalha();
 						}else {
@@ -127,31 +125,39 @@ public class Pesquisaa {
 			//mal fumo
 			void malfumo() {
 				System.out.println("Feedback sobre Cigarro");
-				System.out.println("É bom repensar aquele cigarro diário se você quer melhorar o seu sistema imunológico. Segundo o INCA, o tabagismo surge como um dos inimigos das defesas do corpo e propicia aos fumantes uma chance bem maior de adoecer quando comparados aos não-fumantes. Não importa sua idade, parar de fumar sempre vale a pena. Parar aumenta a expectativa e a qualidade de vida.\r\n"
+				System.out.println("É bom repensar aquele cigarro diário se você quer melhorar o seu sistema imunológico. Segundo o INCA, "
+						+ "o tabagismo surge como um dos inimigos das defesas do corpo e propicia aos fumantes uma chance bem maior de adoecer quando comparados aos não-fumantes."
+						+ " Não importa sua idade, parar de fumar sempre vale a pena. Parar aumenta a expectativa e a qualidade de vida.\r\n"
 						+ "Os benefícios podem ser percebidos em qualquer faixa etária, mas quanto mais cedo o fumante parar, mais saúde ele terá, como reforça o Ministério da Saúde.");
 				this.gastofumo = this.gastofumo *365;
 				System.out.println("Essa é a quantia por ano gasta em cigarros: " + this.gastofumo);
 			}
-			void parabensfumo() {
+			void parabensfumo(){
 				System.out.println("Feedback sobre cigarro");
-				System.out.println("Continue assim, você evitará inúmeros riscos a sua saúde e é importante lembrar que o tabaco causa não apenas câncer, mas uma série de outras doenças crônicas que também podem levar à morte, como doenças cardiovasculares, respiratórias, enfisemas, bronquite crônica.");
+				System.out.println("Continue assim, você evitará inúmeros riscos a sua saúde e é importante lembrar que o tabaco causa não apenas câncer,"
+						+ " mas uma série de outras doenças crônicas que também podem levar à morte, como doenças cardiovasculares, respiratórias, enfisemas, bronquite crônica.");
 			}
 
 			//mal bebe
 			void malbebecerveja(){
-				System.out.println("Voce está bebendo "+ latas + " De acordo com pesquisas da BVS, é recomendado que homens e mulheres não excedam uma quantidade de até duas latas ( 350ml ) de cerveja por dia");
+				System.out.println("Voce está bebendo "+ latas + " De acordo com pesquisas da BVS,"
+						+ " é recomendado que homens e mulheres não excedam uma quantidade de até duas latas ( 350ml ) de cerveja por dia");
 			}
 			void idealbebecerveja() {
-				System.out.println("Você está na media de beber cerveja,De acordo com pesquisas da BVS, é recomendado que homens e mulheres não excedam uma quantidade de até duas latas ( 350ml ) de cerveja por dia ");
+				System.out.println("Você está na media de beber cerveja,De acordo com pesquisas da BVS,"
+						+ " é recomendado que homens e mulheres não excedam uma quantidade de até duas latas ( 350ml ) de cerveja por dia ");
 			}
 			void malbebedestilado() {
-				System.out.println("Voce está bebendo " + mlsdes+ " De acordo com pesquisas da BVS, é recomendado que homens e mulheres não excedam uma quantidade de até uma dose ( 35ml ) de destilados por dia.");
+				System.out.println("Voce está bebendo " + mlsdes+ " De acordo com pesquisas da BVS,"
+						+ " é recomendado que homens e mulheres não excedam uma quantidade de até uma dose ( 35ml ) de destilados por dia.");
 			}
 			void idealbebedestilado() {
-				System.out.println("Você está na média de beber destilados, De acordo com pesquisas da BVS, é recomendado que homens e mulheres não excedam uma quantidade de até uma dose ( 35ml ) de destilados por dia.");
+				System.out.println("Você está na média de beber destilados, De acordo com pesquisas da BVS,"
+						+ " é recomendado que homens e mulheres não excedam uma quantidade de até uma dose ( 35ml ) de destilados por dia.");
 			}
 			void malbebevinho() {
-				System.out.println("Voce está bebendo "+ taca + " De acordo com pesquisas da BVS, é recomendado que homens e mulheres não excedam uma quantidade de até um cálice ( 90 ml ) de vinho por dia");
+				System.out.println("Voce está bebendo "+ taca + " De acordo com pesquisas da BVS,"
+						+ " é recomendado que homens e mulheres não excedam uma quantidade de até um cálice ( 90 ml ) de vinho por dia");
 			}
 			void idealbebevinho() {
 				System.out.println("Você está na media de beber vinho, De acordo com pesquisas da BVS, é recomendado que homens e mulheres não excedam uma quantidade de até uma dose ( 35ml ) de destilados por dia.");
@@ -224,4 +230,5 @@ public class Pesquisaa {
 						+ "Espero que goste!!\r\n"
 						+ "");
 			}
+		
 }

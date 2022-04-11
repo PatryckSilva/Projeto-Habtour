@@ -6,8 +6,6 @@ public class TestaTudoo {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		
-		
 		boasvindas();
 		//recebendo o nome
 		System.out.println("Digite seu nome: ");
@@ -22,6 +20,7 @@ public class TestaTudoo {
 			int i = input.nextInt();
 		//criando objeto com os parametros do método construtor Usuario()
 		Usuario u1 = new Usuario(n,i);
+		
 		//indo para a primeira pergunta
 		System.out.println("Vamos para a primeira pegunta...");
 		//perguntando se fuma
@@ -32,23 +31,24 @@ public class TestaTudoo {
 			System.out.println(u1.getNome() + ", quanto por dia você gasta com cigarros?");
 			gastofumo = input.nextDouble();
 		}
-		//criando objeto para classe Fumante
+		//criando objeto para classe recebendo os dados de quem fuma
 		Pesquisaa f1 = new Pesquisaa();
 			f1.verificafuma(fumoint,gastofumo);
+			
 		//indo para a segunda pergunta
 			System.out.println("Vamos para a segunda pergunta...");
 		//perguntando se bebe
-			System.out.println("Você costuma beber bebidas alcóolicas? Digite '1' para sim e '2' para não? ");
+			System.out.println(u1.getNome()+", você costuma beber bebidas alcóolicas? Digite '1' para sim e '2' para não? ");
 			int bebe = input.nextInt();
 			String naobebe = "";
 			//criando objeto para bebe
 			Pesquisaa b1 = new Pesquisaa();
 			 if (bebe == 1) {
-				 System.out.println("Quantas latas de cerveja por semana?(o ideal é 2 latas)");
+				 System.out.println("Quantas latas de cerveja por dia?(o ideal é 2 latas)");
 				 int latas = input.nextInt();
-					System.out.println("Quantos MLs de destilado?(o ideal é 35ml)");
+					System.out.println("Quantos MLs de destilado por dia?(o ideal é 35ml)");
 					int mlsdes = input.nextInt();
-					System.out.println("Quantas taças de vinho?(o ideal é 90 ml)");
+					System.out.println("Quantas taças de vinho por dia?(o ideal é 90 ml)");
 					int taca = input.nextInt();
 					//puxando metodo verificabebe()
 					b1.verificabebe(latas, mlsdes, taca);
@@ -57,17 +57,18 @@ public class TestaTudoo {
 			 }
 		//indo para a terceira pegunta
 		System.out.println("Vamos para a terceira pergunta...");
-		System.out.println("Quantas horas por dia você fica nas redes sociais?");
+		System.out.println(u1.getNome()+", quantas horas por dia você fica nas redes sociais?");
 		int horasr = input.nextInt();
 		System.out.println("É por trabalho ou lazer? '1'-lazer/'2'-trabalho");
 		int redetrab = input.nextInt();
 		//criando objeto para rede social
 		Pesquisaa r1 = new Pesquisaa();
 		//puxando metodo verificarede()
-		r1.verificaedes(horasr,redetrab);
+		r1.verificaredes(horasr,redetrab);
+		
 		//indo para a quarta pergunta
 		System.out.println("Vamos para a quarta pergunta...");
-		System.out.println("Quantas horas por dia você passa jogando jogos eletrônicos?");
+		System.out.println(u1.getNome()+" quantas horas por dia você passa jogando jogos eletrônicos?");
 		int horasj = input.nextInt();
 		System.out.println("É por trabalho ou lazer? '1'-lazer/'2'-trabalho");
 		int jogostrab = input.nextInt();
@@ -75,14 +76,16 @@ public class TestaTudoo {
 		Pesquisaa j1 = new Pesquisaa();
 		//puxando metodo verificajogos()
 		j1.verificarjogos(horasj, jogostrab);
+		
+		
 		//printando as respostas para o usuario
 		f1.respostafumo();
 		System.out.println();
 		if(bebe ==1) {
-			System.out.println("Feedaback sobre beber");
+			System.out.println("Feedback sobre beber");
 			b1.respostabebe();
 		}else if(bebe==2) {
-			System.out.println("Feedaback sobre beber");
+			System.out.println("Feedback sobre beber");
 			System.out.println(naobebe);
 		}else {
 			System.out.println("Você digitou uma opção inválida por isso não fizemos nenhuma verificação(beber)");
@@ -92,6 +95,8 @@ public class TestaTudoo {
 		System.out.println();
 		j1.respostajogos();
 		
+		System.out.println();
+		System.out.println("Obrigado(a) por participar de nossas pesquisas "+u1.getNome()+ " espero que nosso programa ajude.");
 input.close();
 
 }
@@ -113,6 +118,8 @@ input.close();
 		
 		System.out.println();
 	}
+	
+
 		
 	}
 
