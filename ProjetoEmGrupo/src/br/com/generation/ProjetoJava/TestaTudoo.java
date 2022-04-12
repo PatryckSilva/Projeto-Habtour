@@ -28,7 +28,7 @@ public class TestaTudoo {
 		int fumoint = input.nextInt();
 		double gastofumo = 0.0;
 		if(fumoint == 1) {
-			System.out.println(u1.getNome() + ", quanto por dia você gasta com cigarros?");
+			System.out.println(u1.getNome() + ", quanto em dinheiro você gasta com cigarros por dia?");
 			gastofumo = input.nextDouble();
 		}
 		//criando objeto para classe recebendo os dados de quem fuma
@@ -80,12 +80,12 @@ public class TestaTudoo {
 		f1.respostafumo();
 		System.out.println();
 		if(bebe ==1) {
-			System.out.println("Feedback sobre beber");
+			System.out.println("-------Feedback sobre beber--------");
 			b1.respostabebe();
 		}else if(bebe==2) {
-			System.out.println("Feedback sobre beber");
+			System.out.println("-------Feedback sobre beber--------");
 			System.out.println(naobebe);
-		}else {
+		}else {System.out.println("-------Feedback sobre beber--------");
 			System.out.println("Você digitou uma opção inválida por isso não fizemos nenhuma verificação(beber)");
 		}
 		System.out.println();
@@ -93,7 +93,7 @@ public class TestaTudoo {
 		System.out.println();
 		j1.respostajogos();
 		
-		System.out.println();
+		System.out.println("--------------------------------------------------");
 		System.out.println("Obrigado(a) por participar de nossas pesquisas "+u1.getNome()+ ", espero que nosso programa ajude.");
 input.close();
 
