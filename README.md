@@ -1,27 +1,27 @@
 # Projeto-Habtour
-<p>Este é nosso projeto em Java, no qual o programa foi pensado para ajudar o usuário a identificar hábitos que trazem malefícios para sua saúde, a partir disso alertar e apresentar alguns dados a respeito dessas práticas.</p>
+<p>This is our Java project, in which the project was designed to help the user to identify their health habits and the harm to their health, to alert and present data to some practices.</p>
 <p><img src = "https://cdn.discordapp.com/attachments/954033698012033136/962847059801673798/unknown.png"></p>
 
 ##
 <ol>
-<li><h3> As funcionalidades para o usuário são:</h3>
+<li><h3>The features for the user:</h3>
 <ul>
 <li>
-  <p>Verificar se há algum excesso num dos seguintes desses hábitos que estamos abordando nesse programa(Bebidas alcóolicas, cigarros,redes sociais e vídeo-games).</p>
+  <p>Check for any excess in one of the following habits we've covered in this program: Alcoholic beverages, cigarettes, social media, and video games.</p>
  </li> 
   <li>
-  <p>Após verificar o perfil do usuário,o programa apresenta os riscos físicos e mentais que podem surgir atrelados aos possíveis vícios.
+  <p>After verifying the user's profile, the program presents the physical and mental risks that may arise linked to possible addictions.
   </li>
   </ul></li>
 
 ##
 
-<li><h3>Este é o fluxograma usado para a criação do programa</h3>
+<li><h3>This is the flowchart used to create the program</h3>
 <img src = "https://cdn.discordapp.com/attachments/954033698012033136/962875510478766101/unknown.png"></li>
 
 ##
 
-<li><h3>Esta é a nossa equipe para esse projeto</h3>
+<li><h3>This is our team for this project</h3>
 <img src = "https://cdn.discordapp.com/attachments/954033698012033136/962876193332420618/unknown.png"></li>
   
   <li><h3>Este é um pouco do nosso código</h3>
