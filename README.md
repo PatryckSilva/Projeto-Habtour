@@ -1,4 +1,4 @@
-# Projeto-Habtour
+#Habtour-project
 <p>This is our Java project, in which the project was designed to help the user to identify their health habits and the harm to their health, to alert and present data to some practices.</p>
 <p><img src = "https://cdn.discordapp.com/attachments/954033698012033136/962847059801673798/unknown.png"></p>
 
