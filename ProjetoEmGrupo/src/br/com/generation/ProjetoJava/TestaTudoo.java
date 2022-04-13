@@ -20,17 +20,17 @@ public class TestaTudoo {
 		boasvindas();
 		//recebendo o nome
 		System.out.println(ANSI_Ciano+"Digite seu nome: "+ ANSI_RESET);
-		String n = input.nextLine();
+		String nome = input.nextLine();
 		//verificando se o usuario nao esta digitando numeros 
-		while(!matchesOnlyText(n)){
+		while(!matchesOnlyText(nome)){
 			System.err.println("Você não pode inserir números ou caracteres especiais no nome.");
 			System.out.println(ANSI_Ciano+"Digite seu nome: "+ ANSI_RESET);
-			n = input.nextLine();
+			nome = input.nextLine();
 		}
 			System.out.println(ANSI_Ciano+"Qual sua idade?"+ ANSI_RESET);
 			int i = input.nextInt();
 		//criando objeto com os parametros do método construtor Usuario()
-		Usuario u1 = new Usuario(n,i);
+		Usuario u1 = new Usuario(nome,i);
 		
 		//indo para a primeira pergunta
 		
@@ -69,10 +69,10 @@ public class TestaTudoo {
 					//puxando metodo verificabebe()
 					b1.verificabebe(latas, mlsdes, taca);
 			 }else if(bebe == 2) {
-				 naobebe =ANSI_amarelo+"Desse jeito evitamos o desenvolvimento de doenças crônicas,"
-				 		+ " incluindo hipertensão arterial, doença cardíaca, acidente vascular cerebral, "
-				 		+ "doença hepática e problemas digestivos,"
-				 		+ " e problemas de saúde/mental causados pelo álcool,incluindo depressão e ansiedade"+ANSI_RESET;
+				 naobebe =ANSI_amarelo+"Desse jeito evitamos o desenvolvimento de doenças crônicas,\r\n"
+				 		+ "incluindo hipertensão arterial, doença cardíaca, acidente vascular cerebral,\r\n "
+				 		+ "doença hepática e problemas digestivos,\r\n"
+				 		+ "e problemas de saúde/mental causados pelo álcool,incluindo depressão e ansiedade"+ANSI_RESET;
 			 }
 			 
 			 System.out.println();
@@ -87,7 +87,6 @@ public class TestaTudoo {
 		Pesquisaa r1 = new Pesquisaa();
 		//puxando metodo verificarede()
 		r1.verificaredes(horasr,redetrab);
-		
 		System.out.println();
 		System.out.println();
 		//indo para a quarta pergunta
@@ -121,7 +120,7 @@ public class TestaTudoo {
 		
 		System.out.println(ANSI_Ciano+"------------------------------------------------------------"+ANSI_RESET);
 		System.out.println(ANSI_Ciano+"Obrigado(a) por participar de nossas pesquisas, "+u1.getNome()
-		+"espero que nosso programa ajude."+ANSI_RESET);
+		+" espero que nosso programa ajude."+ANSI_RESET);
 
 }
 	

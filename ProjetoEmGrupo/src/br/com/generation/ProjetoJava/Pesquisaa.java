@@ -139,8 +139,8 @@ public class Pesquisaa {
 			//mal fumo
 			void malfumo() {
 				System.out.println(ANSI_amarelo+"-------Feedback sobre Cigarro-------"+ANSI_RESET);
-				System.out.println(ANSI_amarelo+"É bom repensar aquele cigarro diário se você quer melhorar o seu sistema imunológico. Segundo o INCA, "
-						+ "o tabagismo surge como um dos inimigos das defesas do corpo e propicia aos fumantes uma chance bem maior de adoecer quando comparados aos não-fumantes."
+				System.out.println(ANSI_amarelo+"É bom repensar aquele cigarro diário se você quer melhorar o seu sistema imunológico. Segundo o INCA,\r\n "
+						+ "o tabagismo surge como um dos inimigos das defesas do corpo e propicia aos fumantes uma chance bem maior de adoecer quando comparados aos não-fumantes.\r\n"
 						+ " Não importa sua idade, parar de fumar sempre vale a pena. Parar aumenta a expectativa e a qualidade de vida.\r\n"
 						+ "Os benefícios podem ser percebidos em qualquer faixa etária, mas quanto mais cedo o fumante parar, mais saúde ele terá, como reforça o Ministério da Saúde."+ANSI_RESET);
 				this.gastofumo = this.gastofumo *365;
@@ -148,10 +148,10 @@ public class Pesquisaa {
 			}
 			void parabensfumo(){
 				System.out.println(ANSI_amarelo+"-------Feedback sobre Cigarro-------"+ANSI_RESET);
-				System.out.println(ANSI_amarelo+"Continue assim, você evitará inúmeros riscos a sua saúde."
-						+ " É importante lembrar que o tabaco causa não apenas câncer,"
-						+ " mas uma série de outras doenças crônicas que também podem levar à morte,"
-						+ " como doenças cardiovasculares, respiratórias, enfisemas, bronquite crônica."+ANSI_RESET);
+				System.out.println(ANSI_amarelo+"Continue assim, você evitará inúmeros riscos a sua saúde.\r\n"
+						+ "É importante lembrar que o tabaco causa não apenas câncer,\r\n"
+						+ "mas uma série de outras doenças crônicas que também podem levar à morte,\r\n"
+						+ "como doenças cardiovasculares, respiratórias, enfisemas, bronquite crônica."+ANSI_RESET);
 			}
 
 			//mal bebe
@@ -182,55 +182,55 @@ public class Pesquisaa {
 			//maljogos
 			void maljogos() {
 				System.out.println(ANSI_amarelo+"-------Feedback Sobre jogos-------"+ANSI_RESET);
-				System.out.println(ANSI_amarelo+"Alerta! Você está dentro do que é considerado além do seguro."
-						+ "Verifique se esse hábito não está prejudicando suas relações interpessoais(Deixando de interagir com família e amigos)."
-						+ " O excesso também pode fazer com que deixe de realizar outras atividades e prejudique o seu sono." 
+				System.out.println(ANSI_amarelo+"Alerta! Você está dentro do que é considerado além do seguro.\r\n"
+						+ "Verifique se esse hábito não está prejudicando suas relações interpessoais(Deixando de interagir com família e amigos).\r\n"
+						+ "O excesso também pode fazer com que deixe de realizar outras atividades e prejudique o seu sono.\r\n" 
 						+ "O ideal é 2 horas por dia ou menos e você está " + exchorasj+" horas acima do ideal."+ANSI_RESET);
 			}
 			void idealjogos() {
 				System.out.println(ANSI_amarelo+"-------Feedback Sobre jogos-------"+ANSI_RESET);
-				System.out.println(ANSI_amarelo+"Muito bem! Você está dentro do que é considerado tranquilo."
+				System.out.println(ANSI_amarelo+"Muito bem! Você está dentro do que é considerado tranquilo.\r\n"
 						+ "Lembrando que, segundo alguns estudos,jogar videogames faz bem ao cérebro, desde que não seja em excesso."+ANSI_RESET);
 			}
 			void maljogostrabalha() {
 				System.out.println(ANSI_amarelo+"-------Feedback Sobre jogos-------"+ANSI_RESET);
-				System.out.println(ANSI_amarelo+"Sabemos que você trabalho com isso,mas alerta! Você está dentro do que é considerado além do seguro."
-						+ "Verifique se esse hábito não está prejudicando suas relações interpessoais (Deixando de interagir com família e amigos)."
-						+ " O excesso também pode fazer com que deixe de realizar outras atividades e prejudique o seu sono." 
+				System.out.println(ANSI_amarelo+"Sabemos que você trabalho com isso,mas alerta! Você está dentro do que é considerado além do seguro.\r\n"
+						+ "Verifique se esse hábito não está prejudicando suas relações interpessoais (Deixando de interagir com família e amigos).\r\n"
+						+ "O excesso também pode fazer com que deixe de realizar outras atividades e prejudique o seu sono.\r\n" 
 						+ "O ideal é 2 horas por dia ou menos e você está " + exchorasj+" horas acima do ideal."+ANSI_RESET);
 			}
 			void idealjogostrabalha() {
 				System.out.println(ANSI_amarelo+"-------Feedback Sobre jogos-------"+ANSI_RESET);
-				System.out.println(ANSI_amarelo+"Muito bem! Você está dentro do que é considerado tranquilo mesmo que você trabalhe com isso. Lembrando que,"
-						+ " segundo alguns estudos, jogar videogames faz bem ao cérebro, desde que não seja em excesso."+ANSI_RESET);
+				System.out.println(ANSI_amarelo+"Muito bem! Você está dentro do que é considerado tranquilo mesmo que você trabalhe com isso. Lembrando que,\r\n"
+						+ "segundo alguns estudos, jogar videogames faz bem ao cérebro, desde que não seja em excesso."+ANSI_RESET);
 			}
 			//malredes
 			void aceitavelrede() {
 				System.out.println(ANSI_amarelo+"-------Feedback Sobre as redes sociais-------"+ANSI_RESET);
 				System.out.println(ANSI_amarelo+"Muito bem! você está dentro do aceitável.\r\n"
-						+ "Um estudo publicado pelo Journal of Social and Clinical Psychology,"
-						+ " que concluiu que utilizar as redes sociais por até 30 minutos por dia pode trazer bons resultados à saúde mental,"
-						+ "mas passar até 3h não afeta tanto.\r\n"+ANSI_RESET);
+						+ "Um estudo publicado pelo Journal of Social and Clinical Psychology,\r\n"
+						+ "que concluiu que utilizar as redes sociais por até 30 minutos por dia pode trazer bons resultados à saúde mental,\r\n"
+						+ "mas passar até 3h não afeta tanto."+ANSI_RESET);
 			}
 			void alertarede() {
 				System.out.println(ANSI_amarelo+"-------Feedback Sobre as redes sociais-------"+ANSI_RESET);
-				System.out.println(ANSI_amarelo+"Cuidado! Você está em estado de alerta. Passar mais de 3 horas nas redes sociais afeta o sono,"
-						+ " induz um comportamento mais sedentário durante o dia,aponta estudo na BVS(Biblioteca Virtual em Saúde)."+ANSI_RESET);
+				System.out.println(ANSI_amarelo+"Cuidado! Você está em estado de alerta. Passar mais de 3 horas nas redes sociais afeta o sono,\r\n"
+						+ "induz um comportamento mais sedentário durante o dia,aponta estudo na BVS(Biblioteca Virtual em Saúde)."+ANSI_RESET);
 			}
 			void malrede() {
 				System.out.println(ANSI_amarelo+"-------Feedback Sobre as redes sociais-------");
 				System.out.println(ANSI_amarelo+"\r\n"
 						+ "Atenção!"
-						+ "O uso das redes sociais em grande escala pode afetar a baixa autoestima,"
-						+ " a insatisfação pessoal, a depressão ou hiperatividade e,inclusive, a falta de afeto.\r\n"
-						+ "O psiquiatra Cristiano Nabuco, coordenador do grupo de Dependências Tecnológicas do Instituto de Psiquiatria do Hospital das Clínicas da USP, informa que,"
-						+ " quanto mais se busca a perfeição nas redes sociais e se negligencia a vida real,"
-						+ "mais infeliz o usuário pode se sentir. “Oitenta e cinco por cento de todas as fotografias que são postadas são editadas."
-						+ " Isso é um problema, porque se desenvolve uma autoestima virtual e não pessoal, e quanto mais o indivíduo busca se equiparar a essa vida paralela,"
-						+ " mais infeliz ele vai se sentir na vida real.” Tira um tempo para respirar da tecnologia e vai interagir pessoalmente com outro.\r\n"
+						+ "O uso das redes sociais em grande escala pode afetar a baixa autoestima,\r\n"
+						+ "a insatisfação pessoal, a depressão ou hiperatividade e,inclusive, a falta de afeto.\r\n"
+						+ "O psiquiatra Cristiano Nabuco, coordenador do grupo de Dependências Tecnológicas do Instituto de Psiquiatria do Hospital das Clínicas da USP, informa que,\r\n"
+						+ "quanto mais se busca a perfeição nas redes sociais e se negligencia a vida real,\r\n"
+						+ "mais infeliz o usuário pode se sentir. “Oitenta e cinco por cento de todas as fotografias que são postadas são editadas.\r\n"
+						+ "Isso é um problema, porque se desenvolve uma autoestima virtual e não pessoal, e quanto mais o indivíduo busca se equiparar a essa vida paralela,\r\n"
+						+ "mais infeliz ele vai se sentir na vida real.” Tira um tempo para respirar da tecnologia e vai interagir pessoalmente com outro.\r\n"
 						+ "Fica a dica:\r\n"
 						+ "O tempo é algo que não podemos nos dar ao luxo de desperdiçar. Então, o que você acha de planejar como usá-lo, assim como faria com dinheiro? \r\n"
-						+ "*Escreva quanto tempo acha que seria razoável gastar numa rede social. Depois, veja como se saiu durante um mês. Se você ultrapassou sua meta,"
+						+ "*Escreva quanto tempo acha que seria razoável gastar numa rede social. Depois, veja como se saiu durante um mês. Se você ultrapassou sua meta,\r\n"
 						+ "faça ajustes onde necessário.\r\n"
 						+ "*Concentre-se no que vai fazer no momento.\r\n"
 						+ "*Desligue os seus alertas e notificações.\r\n"
@@ -241,33 +241,32 @@ public class Pesquisaa {
 			void aceitavelredetrab() {
 				System.out.println(ANSI_amarelo+"-------Feedback Sobre as redes sociais-------"+ANSI_RESET);
 				System.out.println(ANSI_amarelo+"Muito bem!Mesmo trabalhando você está dentro do aceitável.\r\n"
-						+ "Um estudo publicado pelo Journal of Social and Clinical Psychology,"
-						+ " que concluiu que utilizar as redes sociais por até 30 minutos por dia pode trazer bons resultados à saúde mental,"
-						+ " mas passar até 3h não afeta tanto.\r\n"+ANSI_RESET);
+						+ "Um estudo publicado pelo Journal of Social and Clinical Psychology,\r\n"
+						+ "que concluiu que utilizar as redes sociais por até 30 minutos por dia pode trazer bons resultados à saúde mental,\r\n"
+						+ "mas passar até 3h não afeta tanto.\r\n"+ANSI_RESET);
 			}
 			void alertaredetrab() {
 				System.out.println(ANSI_amarelo+"-------Feedback Sobre as redes sociais-------");
-				System.out.println("Sabemos que você está trabalhando,mas Cuidado! Passar mais de 3 horas nas redes sociais afeta o sono,"
-						+ " induz um comportamento mais sedentário durante o dia,aponta estudo na BVS(Biblioteca Virtual em Saúde).\r\n"
-						+ " "+ANSI_RESET);
+				System.out.println("Sabemos que você está trabalhando,mas Cuidado! Passar mais de 3 horas nas redes sociais afeta o sono,\r\n"
+						+ "induz um comportamento mais sedentário durante o dia,aponta estudo na BVS(Biblioteca Virtual em Saúde)."+ANSI_RESET);
 			}
 			void malredetrab() {
 				System.out.println(ANSI_amarelo+"-------Feedback Sobre as redes sociais-------"+ANSI_RESET);
-				System.out.println(ANSI_amarelo+"Tome muito cuidado."
-						+ "Sabemos que é por causa do trabalho mas Atenção! O uso das redes sociais em grande escala pode afetar a baixa autoestima,"
-						+ " a insatisfação pessoal, a depressão ou hiperatividade e,inclusive, a falta de afeto.\r\n"
-						+ "O psiquiatra Cristiano Nabuco, coordenador do grupo de Dependências Tecnológicas do Instituto de Psiquiatria do Hospital das Clínicas da USP, informa que,"
-						+ " quanto mais se busca a perfeição nas redes sociais e se negligencia a vida real,"
-						+ "mais infeliz o usuário pode se sentir. “Oitenta e cinco por cento de todas as fotografias que são postadas são editadas."
-						+ " Isso é um problema, porque se desenvolve uma autoestima virtual e não pessoal, e quanto mais o indivíduo busca se equiparar a essa vida paralela,"
-						+ " mais infeliz ele vai se sentir na vida real.” Tira um tempo para respirar da tecnologia e vai interagir pessoalmente com outro.\r\n"
+				System.out.println(ANSI_amarelo+"Tome muito cuidado.\r\n"
+						+ "Sabemos que é por causa do trabalho mas Atenção! O uso das redes sociais em grande escala pode afetar a baixa autoestima,\r\n"
+						+ "a insatisfação pessoal, a depressão ou hiperatividade e,inclusive, a falta de afeto.\r\n"
+						+ "O psiquiatra Cristiano Nabuco, coordenador do grupo de Dependências Tecnológicas do Instituto de Psiquiatria do Hospital das Clínicas da USP, informa que,\r\n"
+						+ "quanto mais se busca a perfeição nas redes sociais e se negligencia a vida real,\r\n"
+						+ "mais infeliz o usuário pode se sentir. “Oitenta e cinco por cento de todas as fotografias que são postadas são editadas.\r\n"
+						+ "Isso é um problema, porque se desenvolve uma autoestima virtual e não pessoal, e quanto mais o indivíduo busca se equiparar a essa vida paralela,\r\n"
+						+ "mais infeliz ele vai se sentir na vida real.” Tira um tempo para respirar da tecnologia e vai interagir pessoalmente com outro.\r\n"
 						+ "Fica a dica:\r\n"
 						+ "O tempo é algo que não podemos nos dar ao luxo de desperdiçar. Então, o que você acha de planejar como usá-lo, assim como faria com dinheiro? \r\n"
-						+ " \r\n"
+						+ "\r\n"
 						+ "*Escreva quanto tempo acha que seria razoável gastar numa rede social. Depois, veja como se saiu durante um mês. Se você ultrapassou sua meta,faça ajustes onde necessário.\r\n"
 						+ "*Concentre-se no que vai fazer no momento.\r\n"
 						+ "*Desligue os seus alertas e notificações.\r\n"
-						+ "* Escolha momentos para verificar e-mails e redes sociais.\r\n"
+						+ "*Escolha momentos para verificar e-mails e redes sociais.\r\n"
 						+ "Espero que goste!!\r\n"
 						+ ""+ANSI_RESET);
 			}
